@@ -110,10 +110,10 @@ Minimum to serve: **17/25**. If nothing passes, the skill digs deeper rather tha
 
 Punderstruck works with any agent or AI assistant that supports custom skills with tool/file access:
 
-- **Claude Code** (Anthropic's agentic coding tool)
-- **Windsurf** (Codeium)
-- **Cursor** (with agent mode)
-- **Claude Desktop** (via projects)
+- **Claude Code**
+- **Windsurf** 
+- **Cursor** 
+- **Claude Desktop** 
 - **Antigravity** and other skill-compatible agents
 
 The only actual requirements are internet access (for Datamuse API calls) and a willingness to groan.
@@ -144,7 +144,7 @@ punderstruck/
 
 ## Built By
 
-**Alex Greenshpun** is an AI Strategist, former VP of Marketing, and someone who believes AI should amplify human creativity rather than replace it. When she's not building AI-augmented marketing systems at [10x Company](https://the10xcompany.ai), she's apparently teaching agents how to be funnier.
+**Alex Greenshpun** is an AI Strategist, former VP of Marketing, and a person whose love of puns has been described by colleagues as "a condition." She believes AI should amplify human creativity rather than replace it, and she also believes every product name is a pun waiting to happen. When she's not building AI-augmented marketing systems at [10x Company](https://the10xcompany.ai), she's teaching agents how to be funnier, because apparently 15 years of B2B marketing wasn't punishment enough.
 
 - [LinkedIn](https://linkedin.com/in/alexgreensh)
 - [10x Company](https://the10xcompany.ai)
