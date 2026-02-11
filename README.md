@@ -110,6 +110,7 @@ Punderstruck works with any agent or AI assistant that supports custom skills wi
 - **Windsurf** 
 - **Cursor** 
 - **Claude Desktop** 
+- **Codex**
 - **Antigravity** and other skill-compatible agents
 
 The only actual requirements are internet access (for Datamuse API calls) and a willingness to groan.
