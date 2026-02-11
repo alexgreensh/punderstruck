@@ -116,9 +116,11 @@ The only actual requirements are internet access (for Datamuse API calls) and a 
 
 ## Installation
 
-Download or clone this repo, then add it as a skill in your agent of choice. The `SKILL.md` file contains the full instruction set, and the `references/` folder holds the comedy theory, pipeline details, and taxonomy that power the whole thing.
+**For Claude Desktop / Claude Cowork:**
+Download the `punderstruck.zip` file from this repo, then go to **Settings → Capabilities → Add Skill** and upload the zip. That's it.
 
-For most agents, that means pointing your skill/project configuration at the folder containing `SKILL.md`.
+**For other agents (Claude Code, Windsurf, Cursor, etc.):**
+Clone this repo or download the folder, then point your agent's skill/project configuration at the directory containing `SKILL.md`. The `references/` folder holds the comedy theory, pipeline details, and taxonomy that power the whole thing.
 
 ## Project Structure
 
@@ -127,13 +129,14 @@ punderstruck/
 ├── SKILL.md                          # The main skill prompt
 ├── README.md                         # You are here
 ├── LICENSE                           # Proprietary, personal use only
+├── punderstruck.zip                  # Ready-to-upload skill package (for Claude Desktop / Cowork)
 ├── assets/
 │   ├── punderstruck-hero.png         # Hero image
 │   └── punderstruck-logo.png         # Logo
 └── references/
     ├── pipeline-detailed.md          # Full pun construction pipeline
     ├── bonus-modes.md                # Roast, translate, remix, compose specs
-    ├── comedy-theory.md              # Joe Toplyn method + theory foundations
+    ├── comedy-theory.md              # Comedy construction methodology
     ├── pun-taxonomy.md               # Classification of pun mechanisms
     └── worked-examples.md            # Scored examples for calibration
 ```
