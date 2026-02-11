@@ -16,17 +16,17 @@
 
 ## What Is This?
 
-Most AI pun generators pull from a stale database of jokes your uncle already forwarded in 2019. Punderstruck takes a different approach entirely.
+Most AI pun generators pull from a stale database of jokes your uncle already forwarded in 2019. Punderstruck takes a completely different approach.
 
-It's a Claude Code skill that *discovers* puns in real time using the [Datamuse API](https://www.datamuse.com/api/) for phonetic analysis, combined with Joe Toplyn's comedy construction methodology. Every pun is built from scratch, scored against five quality criteria, and delivered only if it clears a 17/25 bar.
+It's an agent skill that *discovers* puns in real time using the [Datamuse API](https://www.datamuse.com/api/) for phonetic analysis, combined with Joe Toplyn's comedy construction methodology. Every pun gets built from scratch, scored against five quality criteria, and delivered only if it clears a 17/25 bar.
 
-No recycled jokes. No "why did the chicken" energy. Just genuinely sharp wordplay, built live, every time.
+The skill works with any AI coding agent or assistant that supports custom skills, including Claude Code, Windsurf, Cursor, Claude Desktop, and others. If your agent can load a SKILL.md file and run tool calls, Punderstruck will work.
 
 ## How It Works (The Short Version)
 
-You give it a topic. It extracts "handles" (the words that matter), queries Datamuse for sound-alikes and homophones, analyzes the collision space for cognitive distance, constructs punchlines using comedy theory, scores them ruthlessly, and serves only the survivors.
+You give it a topic. The skill extracts "handles" (the words that matter), queries Datamuse for sound-alikes and homophones, analyzes the collision space for cognitive distance, constructs punchlines using comedy theory, scores them ruthlessly, and serves only the survivors.
 
-You see none of that. You just get the pun.
+All of that happens behind the scenes. You get the pun, and none of the pipeline noise.
 
 ## Modes
 
@@ -36,7 +36,7 @@ Punderstruck ships with a bunch of ways to get creative:
 |---------|-------------|
 | `/punderstruck` | Random pun, full pipeline, no topic constraint |
 | `/punderstruck [topic]` | Focused puns on your topic |
-| `/punderstruck --roast [topic]` | Pun-based roasts (it asks your preferred heat level first) |
+| `/punderstruck --roast [topic]` | Pun-based roasts with adjustable heat level |
 | `/punderstruck --translate "[phrase]"` | Turns corporate jargon into wordplay |
 | `/punderstruck --remix` | Famous quotes and lyrics, rebuilt as puns |
 | `/punderstruck --compose [format] about [topic]` | Longer-form compositions (limericks, haiku, sonnets, you name it) |
@@ -65,31 +65,58 @@ Flags combine freely. Go wild.
 
 > Consultants don't solve problems. They just bill by the our.
 
+**Roast mode** (`/punderstruck --roast developers`):
+
+> A developer's favorite exercise? Running in production.
+
+**Shower thought** (`shower thought about meetings`):
+
+> Every meeting could've been an email, but every email could've been a meeting that never happened.
+
+## Roast Mode
+
+Roast mode deserves its own section because it's where Punderstruck truly shows its range. When you trigger `--roast`, the skill asks you for a heat level before it cooks:
+
+- **Mild** (1-3): Office-friendly. Safe to share in Slack without getting called into HR.
+- **Medium** (4-6): Sharp enough to sting, clean enough to own publicly.
+- **Spicy** (7-9): You asked for it. Expect puns that land with a thud and a wince.
+- **Scorched** (10): Weaponized wordplay. You've been warned.
+
+The target can be a profession, a product, a concept, or anything you can throw at it. Every roast still runs through the full quality pipeline, so even the meanest ones land with proper comedic craft behind them.
+
 ## The Personality
 
-Punderstruck has swagger. It takes the *craft* seriously but never itself. Think: the funniest person at the dinner party who also happens to have studied comedy theory. Sassy, warm, slightly unhinged. If a pun is a stretch, it owns that stretch with confidence, not apology.
+Punderstruck takes the *craft* seriously while never taking itself too seriously. The vibe is sassy, warm, confident, and a little unhinged, like the funniest person at the dinner party who also happens to have studied comedy theory. When a pun stretches, the skill owns that stretch with confidence rather than apology.
 
 ## Quality Control
 
 Every pun runs through a five-criteria scoring system:
 
-1. **Effortless Activation** — Does the double meaning land instantly?
-2. **Surprising Punchline** — Did you see it coming? (You shouldn't have.)
-3. **Groan-Worthy** — The good kind of groan. The involuntary one.
-4. **Setup Brevity** — Short setups hit harder. Target: 8-20 words.
-5. **Actually Funny** — This one has veto power. Score below 3/5 and the pun is eliminated, no exceptions.
+1. **Effortless Activation**: Does the double meaning land instantly?
+2. **Surprising Punchline**: Did you see it coming? (You shouldn't have.)
+3. **Groan-Worthy**: The good kind of groan. The involuntary one.
+4. **Setup Brevity**: Short setups hit harder. Target: 8-20 words.
+5. **Actually Funny**: Score below 3/5 and the pun is eliminated, with no exceptions. This criterion has veto power.
 
 Minimum to serve: **17/25**. If nothing passes, the skill digs deeper rather than serving mediocre material.
 
-## Requirements
+## Compatibility
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (Claude's agentic coding tool)
-- Internet access (for Datamuse API calls)
-- A willingness to groan
+Punderstruck works with any agent or AI assistant that supports custom skills with tool/file access:
+
+- **Claude Code** (Anthropic's agentic coding tool)
+- **Windsurf** (Codeium)
+- **Cursor** (with agent mode)
+- **Claude Desktop** (via projects)
+- **Antigravity** and other skill-compatible agents
+
+The only actual requirements are internet access (for Datamuse API calls) and a willingness to groan.
 
 ## Installation
 
-Download this repo and add it as a skill in Claude Code. The SKILL.md file contains the full instruction set, and the `references/` folder has the comedy theory, pipeline details, and taxonomy that make it all work.
+Download or clone this repo, then add it as a skill in your agent of choice. The `SKILL.md` file contains the full instruction set, and the `references/` folder holds the comedy theory, pipeline details, and taxonomy that power the whole thing.
+
+For most agents, that means pointing your skill/project configuration at the folder containing `SKILL.md`.
 
 ## Project Structure
 
@@ -97,7 +124,7 @@ Download this repo and add it as a skill in Claude Code. The SKILL.md file conta
 punderstruck/
 ├── SKILL.md                          # The main skill prompt
 ├── README.md                         # You are here
-├── LICENSE                           # Proprietary - personal use only
+├── LICENSE                           # Proprietary, personal use only
 ├── assets/
 │   ├── punderstruck-hero.png         # Hero image
 │   └── punderstruck-logo.png         # Logo
@@ -111,14 +138,14 @@ punderstruck/
 
 ## Built By
 
-**Alex Greenshpun** — AI Strategist, former VP of Marketing, and someone who believes AI should amplify human creativity, not replace it. When she's not building AI-augmented marketing systems at [10x Company](https://the10xcompany.ai), she's apparently teaching Claude how to be funnier.
+**Alex Greenshpun** is an AI Strategist, former VP of Marketing, and someone who believes AI should amplify human creativity rather than replace it. When she's not building AI-augmented marketing systems at [10x Company](https://the10xcompany.ai), she's apparently teaching agents how to be funnier.
 
 - [LinkedIn](https://linkedin.com/in/alexgreensh)
 - [10x Company](https://the10xcompany.ai)
 
 ## License
 
-Proprietary — Personal use only. See [LICENSE](LICENSE) for details.
+Proprietary, personal use only. See [LICENSE](LICENSE) for details.
 
 ---
 
