@@ -18,7 +18,7 @@
 
 Most AI pun generators pull from a stale database of jokes your uncle already forwarded in 2019. Punderstruck takes a completely different approach.
 
-It's an agent skill that *discovers* puns in real time using the [Datamuse API](https://www.datamuse.com/api/) for phonetic analysis, combined with Joe Toplyn's comedy construction methodology. Every pun gets built from scratch, scored against five quality criteria, and delivered only if it clears a 17/25 bar.
+It's an agent skill that *discovers* puns in real time using the [Datamuse API](https://www.datamuse.com/api/) for phonetic analysis, combined with structured comedy construction methodology. Every pun gets built from scratch, scored against five quality criteria, and delivered only if it clears a 17/25 bar.
 
 The skill works with any AI coding agent or assistant that supports custom skills, including Claude Code, Windsurf, Cursor, Claude Desktop, and others. If your agent can load a SKILL.md file and run tool calls, Punderstruck will work.
 
