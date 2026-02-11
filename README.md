@@ -119,7 +119,12 @@ The only actual requirements are internet access (for Datamuse API calls) and a 
 **For Claude Desktop / Claude Cowork:**
 Download the `punderstruck.zip` file from this repo, then go to **Settings → Capabilities → Add Skill** and upload the zip. That's it.
 
-**For other agents (Claude Code, Windsurf, Cursor, etc.):**
+**For Claude Code:**
+```sh
+npx skills add aleganza1/punderstruck --skill punderstruck
+```
+
+**For other agents (Windsurf, Cursor, etc.):**
 Clone this repo or download the folder, then point your agent's skill/project configuration at the directory containing `SKILL.md`. The `references/` folder holds the comedy theory, pipeline details, and taxonomy that power the whole thing.
 
 ## Project Structure
