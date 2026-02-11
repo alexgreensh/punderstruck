@@ -75,14 +75,20 @@ Flags combine freely. Go wild.
 
 ## Roast Mode
 
-Roast mode deserves its own section because it's where Punderstruck truly shows its range. When you trigger `--roast`, the skill asks you for a heat level before it cooks:
+Roast mode deserves its own section because it's where Punderstruck truly shows its range. When you trigger `--roast`, the skill asks you to pick a roast level before it starts cooking:
 
-- **Mild** (1-3): Office-friendly. Safe to share in Slack without getting called into HR.
-- **Medium** (4-6): Sharp enough to sting, clean enough to own publicly.
-- **Spicy** (7-9): You asked for it. Expect puns that land with a thud and a wince.
-- **Scorched** (10): Weaponized wordplay. You've been warned.
+| Level | Label | What You Get |
+|-------|-------|-------------|
+| 1 | **Light Roast** ☕ | Playful wordplay, barely a tease. Grandma-safe. |
+| 2 | **Medium Roast** ☕☕ | Pointed puns with a knowing wink. Coworkers gasp-laugh. |
+| 3 | **Dark Roast** ☕☕☕ | Sharp and unapologetic. HR might overhear. |
+| 4 | **Espresso Shot** ☕☕☕☕ | One devastating concentrated line. Maximum damage per word. |
 
-The target can be a profession, a product, a concept, or anything you can throw at it. Every roast still runs through the full quality pipeline, so even the meanest ones land with proper comedic craft behind them.
+Every roast (except Espresso) follows a comedy monologue arc: an opener that addresses the target directly, a build where each line escalates with puns from the pipeline, a callback that references earlier material, and a mic drop closer that lands the hardest punch.
+
+Espresso is different. One line. 10-20 words. Maximum devastation per syllable. No buildup, no arc, just the shot.
+
+The target can be a profession, a concept, an industry, or anything you throw at it. Every roast runs through the full quality pipeline, and the skill always roasts the *archetype*, never individuals. The target should laugh the hardest.
 
 ## The Personality
 
