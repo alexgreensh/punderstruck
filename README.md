@@ -109,7 +109,7 @@ Punderstruck works with any agent or AI assistant that supports custom skills wi
 - **Claude Code**
 - **Windsurf** 
 - **Cursor** 
-- **Claude Desktop** 
+- **Claude Desktop / Cowork** 
 - **Codex**
 - **Antigravity** and other skill-compatible agents
 
