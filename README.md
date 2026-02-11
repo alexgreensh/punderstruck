@@ -61,13 +61,9 @@ Flags combine freely. Go wild.
 > "I'm piping them in!"
 > Now her pipeline's become departmental.
 
-**Roast mode** (`/punderstruck --roast consultants`):
+**Roast mode** (`/punderstruck --roast marketers`, Medium Roast ☕☕):
 
-> Consultants don't solve problems. They just bill by the our.
-
-**Roast mode** (`/punderstruck --roast developers`):
-
-> A developer's favorite exercise? Running in production.
+> You talk about "driving engagement" like you're behind the wheel, but the only thing you've ever driven is a rebrand into a ditch. Your funnel has more leaks than your strategy has layers, and honestly, the best conversion you've ever pulled off is convincing finance to approve another tool.
 
 **Shower thought** (`shower thought about meetings`):
 
