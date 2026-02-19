@@ -136,7 +136,7 @@ than groaning                 meaning, instant groan        coming from the setu
 
 ## Scoring Rubric (5 Criteria, 1-5 Each, Total /25)
 
-### Criterion 1: Real Double Meaning?
+### Criterion 1: Effortless Activation?
 Does the hinge word genuinely carry two meanings, or is one forced? **BOTH meanings must be TRUE AT THE SAME TIME.**
 
 | Score | Description | Example |
@@ -163,7 +163,7 @@ Is it in the dad joke sweet spot? **The groan is the goal, not a bug.**
 | 3 | Moderate groan. Gets a reaction in the right context. | "I'm positive I lost an electron." |
 | 5 | Maximum groan. Audience physically recoils. r/angryupvote territory. | "I used to hate facial hair, but then it grew on me." |
 
-### Criterion 4: Setup Brevity / Economy?
+### Criterion 4: Setup Brevity?
 Minimum words for maximum effect. **Target 8-20 words for standard puns.**
 
 | Score | Description | Example |
@@ -184,7 +184,7 @@ Would someone voluntarily repeat this joke to another person? **The "would I tex
 ### Scoring Thresholds (out of 25)
 
 - **21-25/25**: Hall of Fame. Serve immediately with maximum confidence.
-- **17-20/25**: Solid. Serve with standard trading card. (This is the minimum to serve.)
+- **17-20/25**: Solid. Serve conversationally. (This is the minimum to serve.)
 - **13-16/25**: Mediocre. Generate more candidates or rework.
 - **Below 13**: Discard. The mechanism isn't there.
 

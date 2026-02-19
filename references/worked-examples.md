@@ -52,46 +52,51 @@ Winner: espresso/depresso (highest distance + most instant recognition)
 
 **Candidate 1** (espresso/depresso):
 "What do you call a sad cup of coffee? A depresso."
-- Double meaning: 5/5 (espresso is coffee, depresso = depressed, portmanteau is instant)
-- Surprise: 3/5 (fairly well-known format but still lands)
-- Groan-worthy: 4/5 (solid groan)
-- Brevity: 5/5 (one-line Q&A)
-- **Total: 17/20** ✓
+- Effortless Activation: 5/5 (espresso → depresso is instant)
+- Surprising Punchline: 3/5 (fairly well-known format but still lands)
+- Groan-Worthy: 4/5 (solid groan)
+- Setup Brevity: 5/5 (one-line Q&A)
+- Actually Funny: 3/5 (works but not fresh)
+- **Total: 20/25** ✓
 
 **Candidate 2** (brew/blew):
 "I tried to make coffee in the hurricane. The whole batch brew blew away."
-- Double meaning: 4/5 (brew/blew works)
-- Surprise: 3/5 (setup telegraphs it a bit)
-- Groan-worthy: 3/5 (moderate)
-- Brevity: 3/5 (could be tighter)
-- **Total: 13/20** ✗
+- Effortless Activation: 4/5 (brew/blew works)
+- Surprising Punchline: 3/5 (setup telegraphs it a bit)
+- Groan-Worthy: 3/5 (moderate)
+- Setup Brevity: 3/5 (could be tighter)
+- Actually Funny: 2/5 (forced scenario)
+- **Total: 15/25** ✗
 
 **Candidate 3** (grind/grinned):
 "My coffee maker told me a joke this morning. It just sat there and grinned."
-- Double meaning: 3/5 (grind/grinned is a stretch)
-- Surprise: 4/5 (personification is unexpected)
-- Groan-worthy: 3/5 (moderate)
-- Brevity: 4/5 (clean two-liner)
-- **Total: 14/20** ✓ (barely)
+- Effortless Activation: 3/5 (grind/grinned is a stretch)
+- Surprising Punchline: 4/5 (personification is unexpected)
+- Groan-Worthy: 3/5 (moderate)
+- Setup Brevity: 4/5 (clean two-liner)
+- Actually Funny: 3/5 (lands but doesn't pop)
+- **Total: 17/25** ✓ (barely)
 
 **Candidate 4** (mug polysemy):
 "A coffee cup walked into a police station. It wanted to report a mugging."
-- Double meaning: 5/5 (mug = cup AND crime)
-- Surprise: 4/5 (police station misdirects from coffee)
-- Groan-worthy: 5/5 (maximum groan)
-- Brevity: 5/5 (tight setup)
-- **Total: 19/20** ✓ WINNER
+- Effortless Activation: 5/5 (mug = cup AND crime, instant)
+- Surprising Punchline: 4/5 (police station misdirects from coffee)
+- Groan-Worthy: 5/5 (maximum groan)
+- Setup Brevity: 5/5 (tight setup)
+- Actually Funny: 4/5 (genuinely lands)
+- **Total: 23/25** ✓ WINNER
 
 **Candidate 5** (filter/philter):
 "I only date people who use pour-over. I need someone with a good philter."
-- Double meaning: 4/5 (filter/philter works for word nerds)
-- Surprise: 4/5 (dating + coffee is unexpected)
-- Groan-worthy: 3/5 (too clever for some audiences)
-- Brevity: 4/5 (clean)
-- **Total: 15/20** ✓
+- Effortless Activation: 4/5 (filter/philter works for word nerds)
+- Surprising Punchline: 4/5 (dating + coffee is unexpected)
+- Groan-Worthy: 3/5 (too clever for some audiences)
+- Setup Brevity: 4/5 (clean)
+- Actually Funny: 3/5 (niche appeal)
+- **Total: 18/25** ✓
 
 ### Step 4: CRITIQUE
-Winner: Candidate 4 (mug/mugging) at 19/20.
+Winner: Candidate 4 (mug/mugging) at 23/25.
 - Polysemy pun (one word, two meanings)
 - High cognitive distance (coffee → crime)
 - Setup misdirects perfectly (police station primes crime domain)
@@ -99,24 +104,15 @@ Winner: Candidate 4 (mug/mugging) at 19/20.
 
 ### Step 5: SERVE
 
-```
-╔══════════════════════════════════════╗
-║  🃏  PUN TRADING CARD               ║
-╠══════════════════════════════════════╣
-║                                      ║
-║  A coffee cup walked into a police   ║
-║  station. It wanted to report a      ║
-║  mugging.                            ║
-║                                      ║
-╠══════════════════════════════════════╣
-║  Groan-o-meter: 😐😬😬😬🫠  (4/5)   ║
-║  Type: Polysemy                      ║
-║  Best Used At: Morning team standup  ║
-║  Rarity: Rare                        ║
-╚══════════════════════════════════════╝
-```
+A coffee cup walked into a police station. It wanted to report a mugging.
 
-*"I regret nothing and neither should you."*
+A few more that barely lost the audition:
+
+I only date people who use pour-over. I need someone with a good philter.
+
+My coffee maker told me a joke this morning. It just sat there and grinned.
+
+*Want me to grind out some more, or was that brew-tal enough?*
 
 ---
 
@@ -141,40 +137,30 @@ Datamuse sounds-like (roast-relevant pairs):
 - click → clique (homophone)
 - ROI → "are oh why" (stretched, skip)
 
-Roast candidates (medium heat):
+Roast candidates pool (medium heat, 10+ candidates generated, top 6 shown):
 
-**Candidate 1**: "Marketers are experts at driving engagement. Too bad their Tinder profiles can't say the same."
-- Score: 16/20 ✓
+**C1**: "driving engagement / Tinder profiles" — polysemy on "driving" + "engagement" — 18/25
+**C2**: "magician / trick isn't working" — polysemy on "trick" — 19/25
+**C3**: "fun in funnel / no fun" — compound split + subversion — 20/25
+**C4**: "conversion rates / saving souls" — polysemy on "conversion" — 21/25
+**C5**: "impressions / not making a great one" — polysemy on "impressions" — 22/25
+**C6**: "targeting / everyone's patience" — polysemy on "targeting" — 19/25
 
-**Candidate 2**: "What's the difference between a marketer and a magician? A magician knows when the trick isn't working."
-- Score: 17/20 ✓
-
-**Candidate 3**: "Marketers put the 'fun' in 'funnel.' Just kidding, there's no fun in funnels."
-- Score: 15/20 ✓ WINNER (most on-brand for medium roast)
+### Step 4: ARRANGE into monologue arc (Medium Roast = Opener → Build → Callback → Mic Drop)
+- Opener: Establish comedian talking TO marketers (C5 — "impressions" sets the tone)
+- Build: Escalate with 3-4 connected lines (C4, C3, C2 — each links to the last)
+- Callback: Reference opener material (C6 — circles back to "impressions")
+- Mic Drop: Hardest hit last (C3 reworked as closer)
 
 ### Step 5: SERVE
 
-```
-╔══════════════════════════════════════╗
-║  🃏  PUN TRADING CARD  [ROAST]      ║
-╠══════════════════════════════════════╣
-║                                      ║
-║  Marketers put the "fun" in          ║
-║  "funnel."                           ║
-║                                      ║
-║  Just kidding, there's no fun        ║
-║  in funnels.                         ║
-║                                      ║
-╠══════════════════════════════════════╣
-║  Groan-o-meter: 😐😬😬🫠🫠  (4/5)   ║
-║  Type: Compound Split + Subversion   ║
-║  Heat Level: ☕☕ Medium Roast        ║
-║  Best Used At: Marketing all-hands   ║
-║  Rarity: Uncommon                    ║
-╚══════════════════════════════════════╝
-```
+So you're in marketing. Your whole job is impressions, and honestly? You're not making a great one right now.
 
-*"That one hurt me too."*
+You talk about "conversion rates" like you're saving souls. Buddy, you're selling SaaS. And look, I get it, you put the "fun" in "funnel." Just kidding, there's no fun in funnels. But at least you know the difference between a marketer and a magician. A magician knows when the trick isn't working.
+
+But hey, at least your targeting is accurate. You've successfully targeted everyone's patience.
+
+You put the "fun" in "funnel," the "con" in "content," and the "pain" in "campaign." And somehow, you're still asking for a bigger budget.
 
 ---
 
@@ -200,26 +186,8 @@ Roast candidates (medium heat):
 
 ### Step 5: SERVE
 
-```
-╔══════════════════════════════════════╗
-║  🃏  PUN TRADING CARD [TRANSLATED]  ║
-╠══════════════════════════════════════╣
-║                                      ║
-║  CORPORATE: "Let's align on Q3      ║
-║  priorities."                        ║
-║                                      ║
-║  TRANSLATED: "Let's a-lion on Q3    ║
-║  priorities. Because this meeting    ║
-║  is a jungle and someone needs       ║
-║  to be king."                        ║
-║                                      ║
-╠══════════════════════════════════════╣
-║  Groan-o-meter: 😐😬😬😬😬  (5/5)   ║
-║  Type: Phonetic Near-Miss            ║
-║  Best Used At: That meeting that     ║
-║     should've been an email          ║
-║  Rarity: Legendary                   ║
-╚══════════════════════════════════════╝
-```
+**Corporate**: "Let's align on Q3 priorities."
 
-*"My creator would like to formally apologize for nothing."*
+**Translation**: "Let's a-lion on Q3 priorities." Because this meeting is a jungle and someone needs to be king.
+
+*Deploy at the next standup that should've been an email. You're welcome.*
