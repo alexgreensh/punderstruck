@@ -123,16 +123,31 @@ The only actual requirements are internet access (for Datamuse API calls) and a 
 
 ## Installation
 
-**For Claude Desktop / Claude Cowork:**
-Download the `punderstruck.zip` file from this repo, then go to **Settings → Capabilities → Add Skill** and upload the zip. That's it.
+**For Claude Code (recommended, auto-updatable):**
+```sh
+git clone https://github.com/alexgreensh/punderstruck.git ~/.claude/skills/punderstruck
+```
 
-**For Claude Code:**
+To update later:
+```sh
+git -C ~/.claude/skills/punderstruck pull
+```
+
+**For Claude Code (alternative, static copy):**
 ```sh
 npx skills add alexgreensh/punderstruck --skill punderstruck
 ```
+Note: this copies the skill files at the time of install. To get updates, re-run the command.
+
+**For Claude Desktop / Claude Cowork:**
+Download the `punderstruck.zip` file from this repo, then go to **Settings → Capabilities → Add Skill** and upload the zip. To get updates, re-download and re-upload.
 
 **For other agents (Windsurf, Cursor, etc.):**
-Clone this repo or download the folder, then point your agent's skill/project configuration at the directory containing `SKILL.md`. The `references/` folder holds the comedy theory, pipeline details, and taxonomy that power the whole thing.
+Clone this repo into your agent's skill directory:
+```sh
+git clone https://github.com/alexgreensh/punderstruck.git
+```
+Point your agent's skill/project configuration at the directory containing `SKILL.md`. Updates are just `git pull`.
 
 ## Project Structure
 
