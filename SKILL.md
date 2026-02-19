@@ -78,6 +78,19 @@ Flags combine freely. Natural language detection: creative requests → `--compo
 
 **Intent calibration**: "finished piece" signals (write me, I need for) → polished output. "Spark" signals (brainstorm, angles, inspiration) → raw material + iteration. Ambiguous → finished + go-deeper invitation.
 
+### Roast Heat Levels (always use these exact 4 levels)
+
+When `--roast` is triggered, use AskUserQuestion to present these 4 options BEFORE running the pipeline:
+
+| Level | Label | Description | Length |
+|-------|-------|-------------|--------|
+| 1 | **Light Roast** ☕ | Playful wordplay, barely a tease. Grandma-safe. | 80-120 words |
+| 2 | **Medium Roast** ☕☕ | Pointed puns with a knowing wink. Coworkers gasp-laugh. | 120-180 words |
+| 3 | **Dark Roast** ☕☕☕ | Sharp and unapologetic. HR might overhear. | 180-250 words |
+| 4 | **Espresso Shot** ☕☕☕☕ | One devastating concentrated line. Maximum damage per word. | 10-20 words |
+
+Roast structure (except Espresso): **Opener → Build → Callback → Mic Drop**. Espresso: ONE line, no arc. See `references/bonus-modes.md` for full monologue construction details.
+
 ## Reference Loading
 
 | Mode | Read (parallel) |

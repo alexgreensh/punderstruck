@@ -63,7 +63,13 @@ Flags combine freely. Go wild.
 
 **Roast mode** (`/punderstruck --roast marketers`, Medium Roast ☕☕):
 
-> You talk about "driving engagement" like you're behind the wheel, but the only thing you've ever driven is a rebrand into a ditch. Your funnel has more leaks than your strategy has layers, and honestly, the best conversion you've ever pulled off is convincing finance to approve another tool.
+> So you're in marketing. Your whole job is impressions, and honestly? You're not making a great one right now.
+>
+> You talk about "conversion rates" like you're saving souls. Buddy, you're selling SaaS. Your funnel has more leaks than your strategy has layers, and the best conversion you've ever pulled off is convincing finance to approve another tool.
+>
+> But hey, at least your targeting is accurate. You've successfully targeted everyone's patience.
+>
+> You put the "fun" in "funnel," the "con" in "content," and the "pain" in "campaign." And somehow, you're still asking for a bigger budget.
 
 **Shower thought** (`shower thought about meetings`):
 
@@ -122,7 +128,7 @@ Download the `punderstruck.zip` file from this repo, then go to **Settings → C
 
 **For Claude Code:**
 ```sh
-npx skills add aleganza1/punderstruck --skill punderstruck
+npx skills add alexgreensh/punderstruck --skill punderstruck
 ```
 
 **For other agents (Windsurf, Cursor, etc.):**
