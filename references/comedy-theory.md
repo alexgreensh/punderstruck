@@ -1,18 +1,18 @@
 # Comedy Theory Reference
 
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
-> License: Proprietary — Personal use only. See LICENSE file in skill root.
+> License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
 ## Why This Pipeline Exists
 
 LLMs are fundamentally bad at humor. Not because they lack creativity, but because of how they work:
 
 - **The prediction problem**: Language models generate the *most likely* next token. Humor requires the *least likely but retroactively logical* completion. These are opposite objectives.
-- **EMNLP 2025 findings**: LLMs demonstrate "shallow pun understanding" — they pattern-match to seen joke structures rather than discovering new phonetic collisions. When the pun word is replaced with a random word, LLMs still often classify it as a pun. (Source: "Pun Unintended," EMNLP 2025)
+- **EMNLP 2025 findings**: LLMs demonstrate "shallow pun understanding", they pattern-match to seen joke structures rather than discovering new phonetic collisions. When the pun word is replaced with a random word, LLMs still often classify it as a pun. (Source: "Pun Unintended," EMNLP 2025)
 - **The LLM Repetition Problem**: ChatGPT generates the same ~25 jokes over and over. LLMs default to the most statistically likely joke pattern, which is the most overused one. (Source: WASSA 2023)
 - **The Missing Violation Problem**: RLHF/instruction-tuning optimizes for inoffensiveness, which kills the "violation" in benign violation theory. Comedians described LLM output as "cruise ship comedy from the 1950s." (Source: DeepMind "Robot Walks into a Bar" 2024)
 - **The Explanation Problem**: LLMs tend to generate puns AND then explain them, killing the cognitive reward of "getting it."
-- **Columbia University research**: Explicit humor skills must be scaffolded externally. Prompting "be funny" just produces the average of all humor in training data — which is mediocre.
+- **Columbia University research**: Explicit humor skills must be scaffolded externally. Prompting "be funny" just produces the average of all humor in training data, which is mediocre.
 
 **The fix isn't better prompting. It's a structured pipeline that forces surprise.**
 
@@ -41,9 +41,9 @@ Dad jokes live in the sweet spot where deviation is LOW but sense-making is INST
 
 ### 2. Benign Violation Theory (Peter McGraw, Humor Research Lab)
 
-Something is funny when it simultaneously (1) violates a norm and (2) seems benign/safe. Puns are **linguistic norm violations** — a word "shouldn't" mean two things at once. The violation is benign because the alternative meaning rescues it.
+Something is funny when it simultaneously (1) violates a norm and (2) seems benign/safe. Puns are **linguistic norm violations**, a word "shouldn't" mean two things at once. The violation is benign because the alternative meaning rescues it.
 
-**Critical insight**: Surprise alone does NOT increase humor. Violations do. (Warren, Barsky, & McGraw) When surprising and violating stimuli are tested independently, violations win. Don't just aim for surprise — aim for a genuine linguistic violation that the second meaning resolves.
+**Critical insight**: Surprise alone does NOT increase humor. Violations do. (Warren, Barsky, & McGraw) When surprising and violating stimuli are tested independently, violations win. Don't just aim for surprise. Aim for a genuine linguistic violation that the second meaning resolves.
 
 ### 3. Dual Activation Theory (Kao, Levy & Goodman, Cognitive Science 2015)
 
@@ -86,7 +86,7 @@ For each handle, list words that sound similar OR share meaning in a different d
 
 ### Step C: Measure Cognitive Distance
 
-**The Cognitive Distance Principle**: The farther apart the two domains, the funnier the pun — up to a point.
+**The Cognitive Distance Principle**: The farther apart the two domains, the funnier the pun, up to a point.
 
 ```
 Too Close          Sweet Spot              Too Far
@@ -98,10 +98,10 @@ Too Close          Sweet Spot              Too Far
 ```
 
 Rate each sound-alike pair by domain distance:
-- bean/been: coffee → grammar (medium distance) — usable
-- espresso/depresso: coffee → mental health (high distance) — strong candidate
-- filter/philter: coffee → medieval romance (very high distance) — risky but rewarding if landed
-- brew/blew: coffee → destruction (high distance) — strong candidate
+- bean/been: coffee → grammar (medium distance), usable
+- espresso/depresso: coffee → mental health (high distance), strong candidate
+- filter/philter: coffee → medieval romance (very high distance), risky but rewarding if landed
+- brew/blew: coffee → destruction (high distance), strong candidate
 
 ### Step D: Construct the Punchline First
 
@@ -154,10 +154,10 @@ For standup/text puns: place the pun word at the END of the punchline, not in th
 Plosive consonants (K, hard C, hard G, P, T, B, D) are measurably funnier than soft sounds. Richard Wiseman's LaughLab: the joke rated funniest had the most K sounds. When choosing between two wordings, prefer harder consonants. "Duck" is funnier than "swan." "Pickle" beats "relish."
 
 ### Tim Vine's 15-Jokes-a-Day Method
-Write 15 new jokes daily. Refine relentlessly — sometimes changing just ONE WORD transforms a dud into a winner. When generating multiple puns, vary the structure/rhythm between them to prevent "punchline fatigue."
+Write 15 new jokes daily. Refine relentlessly, sometimes changing just ONE WORD transforms a dud into a winner. When generating multiple puns, vary the structure/rhythm between them to prevent "punchline fatigue."
 
 ### The Toplyn "Discard First" Principle
-Discard your first few associations — the first is the most cliched. Push past the obvious. The third or fourth connection is where the good material lives. This is especially critical for AI: LLMs default to the most statistically likely association, which is the most overused.
+Discard your first few associations. The first is the most cliched. Push past the obvious. The third or fourth connection is where the good material lives. This is especially critical for AI: LLMs default to the most statistically likely association, which is the most overused.
 
 ### The Specificity Principle
 Specific details are inherently funnier than vague ones. "A 1997 Honda Civic" is funnier than "a car." "Kalamazoo" is funnier than "a city." Specificity creates vivid mental images and adds absurd precision that enhances comedy. When building setups, use concrete, specific details over generic ones.
@@ -176,7 +176,7 @@ Dad jokes are a specific subspecies of pun. Their DNA:
 3. **Zero mean-spiritedness**: The only victim is the English language
 4. **Delivery commitment**: The joke is told WITH pride, not sheepishly
 
-The groan is not failure — it's the intended response. A dad joke that gets a genuine laugh has actually failed at being a dad joke.
+The groan is not failure. It's the intended response. A dad joke that gets a genuine laugh has actually failed at being a dad joke.
 
 Research confirms: pun groans are APPROVAL signals, not disapproval. They acknowledge "I see what you did there" and serve as social bonding rituals. (Gibson & Sagarin, 2024)
 
@@ -184,7 +184,7 @@ Research confirms: pun groans are APPROVAL signals, not disapproval. They acknow
 
 ## Observational Humor & Shower Thoughts
 
-Observational humor is comedy drawn from everyday life — pointing out absurdities, contradictions, and oddities that people overlook. It shares DNA with puns: the best dad jokes are observational puns that find hidden wordplay in mundane situations.
+Observational humor is comedy drawn from everyday life, pointing out absurdities, contradictions, and oddities that people overlook. It shares DNA with puns: the best dad jokes are observational puns that find hidden wordplay in mundane situations.
 
 > "I don't trust stairs. They're always up to something."
 

@@ -1,7 +1,7 @@
 # Pipeline Detailed Reference
 
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
-> License: Proprietary — Personal use only. See LICENSE file in skill root.
+> License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
 **Every step below marked (INTERNAL) produces ZERO user-visible output. Execute silently. Output nothing between tool calls.**
 
@@ -20,9 +20,9 @@ The SKILL.md file contains the core theory inline (mechanism hierarchy, Toplyn m
 
 ---
 
-## Step 1a: HANDLE EXTRACTION (Main Context) — (INTERNAL. Output nothing.)
+## Step 1a: HANDLE EXTRACTION (Main Context). (INTERNAL. Output nothing.)
 
-Extract handles BEFORE launching the subagent — you need them to build the Datamuse query list.
+Extract handles BEFORE launching the subagent, you need them to build the Datamuse query list.
 
 **Tier 1 (Obvious)**: 5-8 common associations anyone would think of.
 - For "coffee": brew, bean, grind, espresso, filter, roast, drip, mug
@@ -36,7 +36,7 @@ Extract handles BEFORE launching the subagent — you need them to build the Dat
 
 ---
 
-## Step 1b: SUBAGENT LAUNCH — (INTERNAL. Output nothing.)
+## Step 1b: SUBAGENT LAUNCH. (INTERNAL. Output nothing.)
 
 Use the **Task tool** with `subagent_type: "Bash"` and `model: "haiku"` to fire ALL API calls in a single Python script. Haiku is correct because this is pure data extraction. All creative work stays on Opus in main context.
 
@@ -82,7 +82,7 @@ No auth required. Generous rate limits.
 
 ---
 
-## Step 2: ANALYZE (Seeds + Datamuse Results) — (INTERNAL. Output nothing.)
+## Step 2: ANALYZE (Seeds + Datamuse Results). (INTERNAL. Output nothing.)
 
 **2a. Analyze seed jokes** (if any returned):
 For each seed joke, identify:
@@ -115,18 +115,18 @@ For each sound-alike pair, rate domain distance. **Heavily prioritize polysemy**
 
 ---
 
-## Step 3: GENERATE — (INTERNAL. Output nothing.)
+## Step 3: GENERATE. (INTERNAL. Output nothing.)
 
 Apply the Toplyn method to the highest-distance pairs from Step 2:
 
-**3a. Construct punchlines** — Take the highest-distance pairs FROM YOUR COGNITIVE DISTANCE TABLE. Write a sentence where BOTH meanings are simultaneously active. Write the punchline FIRST (Toplyn principle).
+**3a. Construct punchlines**: Take the highest-distance pairs FROM YOUR COGNITIVE DISTANCE TABLE. Write a sentence where BOTH meanings are simultaneously active. Write the punchline FIRST (Toplyn principle).
 
-**3b. Write misdirecting setups** — Each setup must:
+**3b. Write misdirecting setups**: Each setup must:
 - Establish the FIRST meaning (the expected one)
 - Be under 2 sentences
 - Sound completely innocent (not like a joke setup)
 
-**3c. Third-association filter** — For each collision pair, ask: "Is this the FIRST thing someone would think of?" If yes, discard it. Push past the first two obvious associations. The third or fourth connection is where fresh material lives.
+**3c. Third-association filter**: For each collision pair, ask: "Is this the FIRST thing someone would think of?" If yes, discard it. Push past the first two obvious associations. The third or fourth connection is where fresh material lives.
 
 ### Construction Provenance Rule (Non-Negotiable)
 
@@ -136,11 +136,11 @@ If you cannot point to which Datamuse result or seed joke inspired a candidate, 
 
 **Test**: For each candidate, "Which Datamuse sound-alike pair or seed joke mechanism does this come from?" If the answer is "none, I just thought of it," it fails provenance.
 
-**Only exception**: Datamuse completely down (extremely rare) — fall back to comedy theory + phonetic intuition.
+**Only exception**: Datamuse completely down (extremely rare), fall back to comedy theory + phonetic intuition.
 
 ---
 
-## Step 4: CRITIQUE — (INTERNAL. Output nothing.)
+## Step 4: CRITIQUE. (INTERNAL. Output nothing.)
 
 Generate 5 candidates. Score each on 5 criteria (1-5 each):
 
@@ -174,12 +174,14 @@ If STILL below 17: Serve the best with: *"This one's a stretch. Even I know it. 
 
 ### Research-Backed Scoring Formula (Calibration)
 
+**Note:** This weighted formula is for calibration reference only. The operational scoring system is the /25 unweighted system defined in SKILL.md.
+
 ```
 Score = (Surprise × 0.30) + (Parsability × 0.25) + (Economy × 0.20) + (Novelty × 0.15) + (Speakability × 0.10)
 ```
 
 - **Surprise 5**: Total cognitive reframe. **4**: Strong misdirection. **3**: Noticeable. **2**: Telegraphed. **1**: None.
-- **Parsability 5**: Instant. **4**: Quick click 1-2 sec (SWEET SPOT — highest Reddit engagement). **3**: Medium. **2**: Needs re-reading. **1**: Requires explanation.
+- **Parsability 5**: Instant. **4**: Quick click 1-2 sec (SWEET SPOT, highest Reddit engagement). **3**: Medium. **2**: Needs re-reading. **1**: Requires explanation.
 - **Economy 5**: Ultra-minimal ("[18+]" → "19"). **4**: Under 15 words. **3**: Under 25 words. **2**: Padded. **1**: Bloated.
 - **Novelty 5**: Never seen before. **4**: Fresh take. **3**: Familiar mechanism, new context. **2**: Known format. **1**: Overused.
 - **Speakability 5**: Perfect spoken. **4**: Works with emphasis. **3**: Text is clearer. **2**: Text-dependent. **1**: Visual only.
@@ -201,7 +203,7 @@ Thresholds: 4.0+ publish-ready. 3.5-3.9 solid. 3.0-3.4 needs work. Below 3.0 dis
 
 ---
 
-## Step 4.25: TIGHTEN — (INTERNAL. Output nothing.)
+## Step 4.25: TIGHTEN. (INTERNAL. Output nothing.)
 
 Before the humor review, compress the winning candidate:
 - Can any word be cut without losing meaning? Cut it.
@@ -231,7 +233,7 @@ Reddit data: Statements = 83% of top posts (avg 36.5K). Questions = 17% (avg 33.
 
 ---
 
-## Step 4.5: HUMOR REVIEW — (INTERNAL. Output nothing.)
+## Step 4.5: HUMOR REVIEW. (INTERNAL. Output nothing.)
 
 After scoring on technical quality, the winner must ALSO pass the humor gate.
 
@@ -256,7 +258,7 @@ After scoring on technical quality, the winner must ALSO pass the humor gate.
 
 ---
 
-## Step 5: SERVE — This is the ONLY step that produces visible output.
+## Step 5: SERVE. This is the ONLY step that produces visible output.
 
 **Conversational delivery. No cards. No tables. No gimmicks.**
 
@@ -309,7 +311,7 @@ Generate a FRESH, original one-liner each time. Never reuse themes within a sess
 After serving, end with a brief invitation to iterate (except shower thoughts):
 - **Standard/Topic**: "Want a different angle on [topic]?"
 - **Roast**: "Want me to dial it up? Take a different angle? Or roast something else?"
-- **Brainstorm**: Built in — "Which angle hits?"
+- **Brainstorm**: Built in. "Which angle hits?"
 - **Compose**: "Want me to try a different format? Or tighten this one?"
 - **Wordplay**: "Want more on [word]? Or a different word?"
 
@@ -342,9 +344,9 @@ For `/punderstruck coffee`:
 
 ### Quality Spectrum
 
-- **TOO CLEVER**: "The ontological implications of ursine dentistry are grizzly" (1/5 — parsing > groaning)
-- **SWEET SPOT**: "What do you call a bear with no teeth? A gummy bear." (4/5 — simple, instant, real)
-- **TOO OBVIOUS**: "What's a cat's favorite color? Purr-ple." (2/5 — zero surprise)
+- **TOO CLEVER**: "The ontological implications of ursine dentistry are grizzly" (1/5, parsing > groaning)
+- **SWEET SPOT**: "What do you call a bear with no teeth? A gummy bear." (4/5, simple, instant, real)
+- **TOO OBVIOUS**: "What's a cat's favorite color? Purr-ple." (2/5, zero surprise)
 
 ### Reference Punchlines (Pattern Library)
 
@@ -362,9 +364,9 @@ For `/punderstruck coffee`:
 
 ### Viral Format Templates
 
-1. "I have a [TOPIC] joke, but [PUN]" — self-referential meta
-2. "What do you call a [X]? A [PUN]!" — classic Q&A
-3. "[TOPIC] walks into a bar..." — narrative setup
-4. "[JARGON] used in unexpected context" — profession humor
-5. "[STATEMENT]. [REINTERPRETATION]." — two-sentence polysemy
-6. "[FAMOUS QUOTE with one word swapped]" — remix format
+1. "I have a [TOPIC] joke, but [PUN]": self-referential meta
+2. "What do you call a [X]? A [PUN]!": classic Q&A
+3. "[TOPIC] walks into a bar...": narrative setup
+4. "[JARGON] used in unexpected context": profession humor
+5. "[STATEMENT]. [REINTERPRETATION].": two-sentence polysemy
+6. "[FAMOUS QUOTE with one word swapped]": remix format

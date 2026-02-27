@@ -1,27 +1,27 @@
 # Pun Taxonomy & Quality Reference
 
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
-> License: Proprietary — Personal use only. See LICENSE file in skill root.
+> License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
 ## Pun Types (Ranked by Reddit Performance)
 
 Based on analysis of 150+ Reddit posts across 5 subreddits (scores 221 to 219,185):
 
-### 1. Polysemy Puns (35% of top posts, avg score: 42,000) — PRIORITIZE THIS
+### 1. Polysemy Puns (35% of top posts, avg score: 42,000). PRIORITIZE THIS
 One word with multiple established meanings. **The highest-performing mechanism.**
 
-- "My wife completed a 40-week **body building** program. It's a girl, 7lbs 12oz." (fitness vs pregnancy) — 43,971 pts, 97% upvote ratio
+- "My wife completed a 40-week **body building** program. It's a girl, 7lbs 12oz." (fitness vs pregnancy), 43,971 pts, 97% upvote ratio
 - "I'm reading a book about anti-gravity. Can't **put it down**." (physically set down / stop reading)
 - "The rotation of Earth really **makes my day**." (creates the day / pleases me)
-- "The dry erase board is the most **remarkable** invention." (re-mark-able) — 28,923 pts, 96% ratio
+- "The dry erase board is the most **remarkable** invention." (re-mark-able), 28,923 pts, 96% ratio
 
 **Strength**: Both meanings are the SAME word. No spelling trick. The collision feels inevitable. Highest upvote ratios (92% avg) confirm: clean polysemy is the gold standard.
 
 ### 2. Compound Split Puns (18%, avg score: 36,000)
 Breaking a compound word into its components to reveal a hidden meaning.
 
-- "Can I have a **bookmark**?" / "He still doesn't know my name is Brian" — 48,980 pts, 94%
-- "He's a **neck romancer**" (necromancer → neck romancer) — 32,482 pts
+- "Can I have a **bookmark**?" / "He still doesn't know my name is Brian", 48,980 pts, 94%
+- "He's a **neck romancer**" (necromancer → neck romancer), 32,482 pts
 - "Backwards **stereo types**" (stereotypes → stereo types, then lists ynoS, ahamaY, esoB)
 
 **Strength**: Feels like discovering something hiding in plain sight. Easy to generate mechanically.
@@ -29,8 +29,8 @@ Breaking a compound word into its components to reveal a hidden meaning.
 ### 3. Homophone Puns (15%, avg score: 30,000)
 Two words that sound identical but have different meanings/spellings.
 
-- "**Neil** before me" (Neil Armstrong / kneel) — 29,216 pts
-- "I'm a **faux pa**" (faux pas / fake dad) — 28,604 pts
+- "**Neil** before me" (Neil Armstrong / kneel), 29,216 pts
+- "I'm a **faux pa**" (faux pas / fake dad), 28,604 pts
 - "I'm on a seafood diet. I **see food** and I eat it."
 
 **Strength**: Clean double meaning, instant recognition. Highest upvote RATIOS (96% avg) but lower raw scores.
@@ -38,16 +38,16 @@ Two words that sound identical but have different meanings/spellings.
 ### 4. Meta/Self-Referential (12%, avg score: 40,000)
 Jokes about the joke format, medium, or context itself.
 
-- "BREAKING: Iran has struck its own submarine... Whoops wrong **sub**" — 86,886 pts (subreddit/submarine)
+- "BREAKING: Iran has struck its own submarine... Whoops wrong **sub**", 86,886 pts (subreddit/submarine)
 - "Is this **sub** still active?" / "There hasn't been any posts all year" (posted Jan 1st)
-- "[18+]" → "19" — 38,565 pts (content warning / math)
+- "[18+]" → "19", 38,565 pts (content warning / math)
 
-**Strength**: Highest ceiling (86K+ pts possible). Very hard for AI to generate — requires understanding of medium and audience expectations.
+**Strength**: Highest ceiling (86K+ pts possible). Very hard for AI to generate, requires understanding of medium and audience expectations.
 
 ### 5. Phonetic Near-Miss Puns (8%, avg score: 28,000)
 Words that don't sound identical but are close enough for the brain to bridge the gap.
 
-- "If pronouncing my b's as v's makes me sound Russian, then **soviet**" (so be it → soviet) — 32,091 pts
+- "If pronouncing my b's as v's makes me sound Russian, then **soviet**" (so be it → soviet), 32,091 pts
 - "What do you call a fake noodle? An **impasta**."
 - "Slim to **nun**?" (slim to none)
 
@@ -56,7 +56,7 @@ Words that don't sound identical but are close enough for the brain to bridge th
 ### 6. Literal vs Figurative (7%, avg score: 33,000)
 Taking a figurative expression literally, or vice versa.
 
-- "[warning **18+**]" → "19" — treating a content warning as math
+- "[warning **18+**]" → "19", treating a content warning as math
 - "I didn't like my beard at first. Then it **grew on me**."
 
 **Strength**: Universal. Everyone knows the figurative meaning, so the literal reinterpretation always lands.
@@ -136,13 +136,13 @@ than groaning                 meaning, instant groan        coming from the setu
 
 ## Scoring Rubric (5 Criteria, 1-5 Each, Total /25)
 
-### Criterion 1: Effortless Activation?
+### Criterion 1: Real Double Meaning?
 Does the hinge word genuinely carry two meanings, or is one forced? **BOTH meanings must be TRUE AT THE SAME TIME.**
 
 | Score | Description | Example |
 |-------|-------------|---------|
 | 1 | No real double meaning. Sounds like a pun but isn't. | "I like coding because it's... code-ical?" |
-| 3 | Double meaning exists but one side is a stretch. | "Programmers are great — they always get arrays of compliments." |
+| 3 | Double meaning exists but one side is a stretch. | "Programmers are great, they always get arrays of compliments." |
 | 5 | Both meanings are independently valid AND simultaneously true. | "I'm reading a book about anti-gravity. Can't put it down." |
 
 ### Criterion 2: Surprising Punchline?
@@ -163,7 +163,7 @@ Is it in the dad joke sweet spot? **The groan is the goal, not a bug.**
 | 3 | Moderate groan. Gets a reaction in the right context. | "I'm positive I lost an electron." |
 | 5 | Maximum groan. Audience physically recoils. r/angryupvote territory. | "I used to hate facial hair, but then it grew on me." |
 
-### Criterion 4: Setup Brevity?
+### Criterion 4: Setup Brevity / Economy?
 Minimum words for maximum effect. **Target 8-20 words for standard puns.**
 
 | Score | Description | Example |
@@ -184,7 +184,7 @@ Would someone voluntarily repeat this joke to another person? **The "would I tex
 ### Scoring Thresholds (out of 25)
 
 - **21-25/25**: Hall of Fame. Serve immediately with maximum confidence.
-- **17-20/25**: Solid. Serve conversationally. (This is the minimum to serve.)
+- **17-20/25**: Solid. Serve with standard trading card. (This is the minimum to serve.)
 - **13-16/25**: Mediocre. Generate more candidates or rework.
 - **Below 13**: Discard. The mechanism isn't there.
 

@@ -1,7 +1,7 @@
 # Bonus Modes Reference
 
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
-> License: Proprietary — Personal use only. See LICENSE file in skill root.
+> License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
 ---
 
@@ -45,7 +45,7 @@ You're not a joke generator. You're the funniest person at the party who also ha
 
 ## --roast [topic]
 
-**This is a COMEDY ROAST — a performance piece, not a list of pun-zingers.**
+**This is a COMEDY ROAST, a performance piece, not a list of pun-zingers.**
 
 Think Comedy Central Roast, not a pun encyclopedia. The output is a monologue with a narrative arc that a human could actually read at a team meeting and get laughs. Every line connects to the next. Callbacks reference earlier material. The whole thing BUILDS.
 
@@ -64,14 +64,14 @@ When roast mode is triggered, FIRST use AskUserQuestion to let the user pick the
 
 Every roast (except Espresso) follows this arc:
 
-**1. THE OPENER** (1-2 sentences): Address the topic/profession directly. Establish the comedian's persona. Set the tone. Second person — talk TO them.
+**1. THE OPENER** (1-2 sentences): Address the topic/profession directly. Establish the comedian's persona. Set the tone. Second person, talk TO them.
 - Example: "So you're in marketing. That's... brave. Most people at least TRY to hide that they're making things up for a living."
 
 **2. THE BUILD** (3-5 sentences): Each sentence escalates. Each contains a pun or wordplay from the pipeline. Crucially: sentences CONNECT to each other. Use callbacks, extensions, "and another thing" energy. This is a CONVERSATION, not a random list of zingers.
 - Example: "Your whole job is impressions, and honestly? You're not making a great one right now. You talk about 'conversion rates' like you're saving souls. Buddy, you're selling SaaS."
 
 **3. THE CALLBACK** (1-2 sentences): Reference something from the opener or build. Callbacks are what separate a real roast from a list. They prove the comedian is listening to their own material.
-- Example: "But hey, at least your targeting is accurate — you've successfully targeted everyone's patience."
+- Example: "But hey, at least your targeting is accurate, you've successfully targeted everyone's patience."
 
 **4. THE MIC DROP** (1 sentence): The closer. The hardest-hitting pun of the set. End on maximum impact. This is the line people screenshot.
 - Example: "You put the 'fun' in 'funnel'... and the 'hell' in 'newsletter.'"
@@ -80,7 +80,7 @@ Every roast (except Espresso) follows this arc:
 - **Light**: 80-120 words. Gentle, grandma-safe. Opener → Build (2-3 lines) → Mic Drop.
 - **Medium**: 120-180 words. Pointed but workplace-appropriate. Full arc.
 - **Dark**: 180-250 words. Sharp, unapologetic, multiple escalations. Full arc with extra build.
-- **Espresso**: ONE line. 10-20 words. Maximum devastation per syllable. No buildup, no arc — just the shot.
+- **Espresso**: ONE line. 10-20 words. Maximum devastation per syllable. No buildup, no arc. Just the shot.
 
 ### Pipeline Modification for Roasts
 - Steps 1-3 run normally but generate a POOL of 10+ pun candidates
@@ -110,11 +110,11 @@ Could you actually read this roast aloud at a team meeting and get laughs? Does 
 Pipeline modification:
 1. Take the input phrase directly
 2. Extract handles from the corporate jargon words
-3. **Expansion step (critical for multi-syllable jargon):** For each handle, first run `ml=WORD` (means-like) to find semantically related words with better phonetic collisions. THEN run `sl=WORD` on both original handles AND expansion results. Corporate buzzwords have thin Datamuse coverage — expansion widens the collision space.
-4. Also run compound embedding queries (`sp=*WORD*` and `sp=WORD*`) — these surface words containing the handle as a substring.
+3. **Expansion step (critical for multi-syllable jargon):** For each handle, first run `ml=WORD` (means-like) to find semantically related words with better phonetic collisions. THEN run `sl=WORD` on both original handles AND expansion results. Corporate buzzwords have thin Datamuse coverage, expansion widens the collision space.
+4. Also run compound embedding queries (`sp=*WORD*` and `sp=WORD*`), these surface words containing the handle as a substring.
 5. Find the best phonetic collision. **The phonetic swap must carry the comedy.** If only the extended metaphor is funny, find a better swap.
 6. Rebuild the phrase using the sound-alike word, then extend the metaphor into a second sentence.
-7. **Prefer single-word swaps** — the original phrase should remain immediately recognizable.
+7. **Prefer single-word swaps**, the original phrase should remain immediately recognizable.
 
 **Meeting-culture angle**: The audience is people stuck in corporate meetings. Aim extended metaphors at meeting-culture absurdity.
 
@@ -128,7 +128,7 @@ Deliver both versions conversationally: the original corporate phrase, then the 
 
 Pipeline modification:
 1. Identify the source material (if not provided, pick a well-known quote related to the topic)
-2. Extract the hinge words — words that can be swapped for sound-alikes
+2. Extract the hinge words, words that can be swapped for sound-alikes
 3. Run Datamuse on hinge words
 4. Swap with topic-relevant sound-alikes
 5. The result should still be recognizable as the original quote
@@ -161,7 +161,7 @@ The Pun Composer. For when a single joke isn't enough.
 
 ### Pipeline Modification
 - Steps 1-3 generate a POOL of 10+ pun candidates (instead of 5)
-- Step 4 becomes "arrange and weave" — select 5-8 strongest, arrange so each builds on the last
+- Step 4 becomes "arrange and weave", select 5-8 strongest, arrange so each builds on the last
 - Composition should feel like escalating wordplay, not a random collection stapled together
 - Step 5 serves the composition directly (the composition IS the artifact)
 
@@ -172,8 +172,8 @@ The AABBA structure means line 5 IS the punchline. Place the highest-scoring pun
 Compose mode's opening and closing lines are strong, but middle lines often serve rhyme/meter without comedic work. Not acceptable. Every line must contain genuine wordplay (double meaning, phonetic collision, polysemy). No filler lines. No rhyme-only lines.
 
 ### Structural vs Ornamental Puns (Middle-Line Test)
-- **ORNAMENTAL**: Line makes sense without the double meaning — wordplay is garnish.
-- **STRUCTURAL**: Removing the double meaning makes the line nonsensical — wordplay IS the joke.
+- **ORNAMENTAL**: Line makes sense without the double meaning, wordplay is garnish.
+- **STRUCTURAL**: Removing the double meaning makes the line nonsensical, wordplay IS the joke.
 Every line needs STRUCTURAL wordplay. B-rhyme pairs (lines 3-4 in limericks) are most at-risk for ornamental filler.
 
 ### Length Discipline
@@ -182,7 +182,7 @@ Default lengths prevent bloat, but user requests override:
 - **If user specifies length, USE IT.** "Long story" = go long. "Quick paragraph" = go short.
 
 ### Every Sentence Must Earn Its Place
-Each sentence must contain a REAL pun — not just a topic word used literally in different context. "The copywriter quit" is not a pun. Using a marketing term in a non-marketing context is NOT automatically a pun unless there's a genuine double meaning doing comedic work.
+Each sentence must contain a REAL pun, not just a topic word used literally in different context. "The copywriter quit" is not a pun. Using a marketing term in a non-marketing context is NOT automatically a pun unless there's a genuine double meaning doing comedic work.
 
 Natural language detection routes automatically: "write me a pun poem about SEO" → `--compose poem about SEO`
 
@@ -213,9 +213,9 @@ Triggered when the user asks for "wordplay on/about [word]" rather than "a joke/
 
 **Output format:**
 ```
-1. **Soup-reme Court** — where all bowls are judged final
-2. **Bouillon/Bullion** — one makes you rich, the other makes you richer
-3. **Soup to nuts** — also how my last diet went
+1. **Soup-reme Court**: where all bowls are judged final
+2. **Bouillon/Bullion**: one makes you rich, the other makes you richer
+3. **Soup to nuts**: also how my last diet went
 ```
 
 Compact, scannable, focused on the word itself. Sign-off at the end.
@@ -230,7 +230,7 @@ When `--explain` is active, add this section AFTER the pun (or composition):
 🔬 COMEDY AUTOPSY
 
 Mechanism: [pun type from taxonomy]
-Hinge Word: "[the word]" — carries two meanings:
+Hinge Word: "[the word]", carries two meanings:
   1. [meaning in domain A]
   2. [meaning in domain B]
 
@@ -245,7 +245,7 @@ Comedy Theory Connection:
 [Which Toplyn principle was applied. Reference specific technique.]
 
 Upgrade Suggestion:
-[One specific way this joke could be better — tighter setup,
+[One specific way this joke could be better, tighter setup,
  higher cognitive distance, better misdirection, etc.]
 ```
 
@@ -275,4 +275,4 @@ Each thought must create a genuine cognitive shift. Reader reaction: "wait... oh
 ### For Compose/Humor Review of Shower Thoughts
 - Does this thought create an actual cognitive shift, or is it just "an observation"?
 - Could someone have thought of this in 5 seconds? If yes, it's not a shower thought.
-- If it starts with "It's ironic that..." or "When you think about it..." — too obvious. Kill the framing. Just state the realization.
+- If it starts with "It's ironic that..." or "When you think about it...", too obvious. Kill the framing. Just state the realization.
