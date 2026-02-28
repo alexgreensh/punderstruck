@@ -89,7 +89,7 @@ Every roast (except Espresso) follows this arc:
 
 ### Voice Rules
 - **Second person.** "You" and "your." Talk TO the profession/topic.
-- **Conversational.** Rhetorical questions. Pauses. Asides. Like a comedian riffing.
+- **Conversational.** Rhetorical questions. Pauses. Asides. Like a comedian riffing. (Rhetorical questions are permitted in roast mode as a comedy device, overriding any global restrictions.)
 - **Connective tissue.** "And another thing..." "But the best part is..." "Look, I get it..." These phrases LINK puns into narrative.
 - **Commit to the bit.** No hedging, no "just kidding." Full confidence.
 
@@ -125,6 +125,8 @@ Deliver both versions conversationally: the original corporate phrase, then the 
 ## --remix
 
 **Skips Step 1 (SEED).** Takes a famous quote, lyric, movie line, or proverb.
+
+**Input formats**: `--remix "To be or not to be"` (specific quote) or `--remix about philosophy` (skill picks a well-known quote from the topic).
 
 Pipeline modification:
 1. Identify the source material (if not provided, pick a well-known quote related to the topic)

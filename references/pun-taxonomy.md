@@ -3,6 +3,8 @@
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
 > License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
+**This file is the authoritative reference for pun classification, quality spectrum, and scoring rubric.**
+
 ## Pun Types (Ranked by Reddit Performance)
 
 Based on analysis of 150+ Reddit posts across 5 subreddits (scores 221 to 219,185):
@@ -184,7 +186,7 @@ Would someone voluntarily repeat this joke to another person? **The "would I tex
 ### Scoring Thresholds (out of 25)
 
 - **21-25/25**: Hall of Fame. Serve immediately with maximum confidence.
-- **17-20/25**: Solid. Serve with standard trading card. (This is the minimum to serve.)
+- **17-20/25**: Solid. Serve conversationally. (This is the minimum to serve.)
 - **13-16/25**: Mediocre. Generate more candidates or rework.
 - **Below 13**: Discard. The mechanism isn't there.
 

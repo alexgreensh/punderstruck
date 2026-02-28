@@ -3,6 +3,8 @@
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
 > License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
+**This file is the authoritative execution reference for the pun construction pipeline.**
+
 **Every step below marked (INTERNAL) produces ZERO user-visible output. Execute silently. Output nothing between tool calls.**
 
 ---
@@ -185,8 +187,6 @@ Score = (Surprise × 0.30) + (Parsability × 0.25) + (Economy × 0.20) + (Novelt
 - **Economy 5**: Ultra-minimal ("[18+]" → "19"). **4**: Under 15 words. **3**: Under 25 words. **2**: Padded. **1**: Bloated.
 - **Novelty 5**: Never seen before. **4**: Fresh take. **3**: Familiar mechanism, new context. **2**: Known format. **1**: Overused.
 - **Speakability 5**: Perfect spoken. **4**: Works with emphasis. **3**: Text is clearer. **2**: Text-dependent. **1**: Visual only.
-
-Thresholds: 4.0+ publish-ready. 3.5-3.9 solid. 3.0-3.4 needs work. Below 3.0 discard.
 
 ### The Golden Pun Checklist
 

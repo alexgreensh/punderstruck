@@ -3,6 +3,8 @@
 > Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
 > License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
+**This file is the authoritative reference for comedy science, construction methodology, and craft techniques.**
+
 ## Why This Pipeline Exists
 
 LLMs are fundamentally bad at humor. Not because they lack creativity, but because of how they work:

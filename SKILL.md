@@ -56,6 +56,7 @@ Here are your limericks: [final]
 **FORBIDDEN in output**: if ANY appear, DELETE and restart:
 - "handle/handles", "Datamuse", "API", "candidate/C1/C2", scoring tables
 - "Let me", "First I'll", "Now I'll", "Step 0/1/2/3/4"
+- "Mode:", "Analyzing:", "Generating:", "Scoring:", "Processing:"
 - Cognitive distance ratings, "pipeline", "mechanism" (unless --explain)
 - JSON, curl output, ANY narration of what you're doing or thinking
 
@@ -72,7 +73,7 @@ Here are your limericks: [final]
 | `/punderstruck --explain` | Comedy Autopsy: pipeline + mechanism breakdown after joke |
 | `/punderstruck --roast [topic]` | Roast: profession/topic pun roast (prompt for heat level) |
 | `/punderstruck --translate "[phrase]"` | Jargon Translator: corporate speak into puns |
-| `/punderstruck --remix` | Culture Remix: famous quotes/lyrics rebuilt as puns |
+| `/punderstruck --remix "[quote]"` or `--remix about [topic]` | Culture Remix: famous quotes/lyrics rebuilt as puns |
 | `/punderstruck --compose [format] about [topic]` | Pun Composer: longer-form compositions |
 | `wordplay on [word]` | Wordplay: manipulate THE WORD ITSELF |
 | `brainstorm puns for...` | Brainstorm: collaborative pun consulting |
@@ -118,7 +119,7 @@ python3 -c "
 import json, urllib.request, concurrent.futures
 
 HANDLES = [{{HANDLE_LIST}}]
-TOPIC = '{{TOPIC}}'
+TOPIC = """{{TOPIC}}"""
 
 def fetch(url, headers=None):
     try:
