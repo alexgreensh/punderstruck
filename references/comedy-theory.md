@@ -66,9 +66,9 @@ This is the single most reliable predictor of pun quality. (Source: fMRI researc
 
 ---
 
-## Joe Toplyn's Method (Adapted for Pun Construction)
+## Punchline-First Construction Method
 
-Joe Toplyn (Emmy-winning comedy writer, *Comedy Writing for Late-Night TV*) uses a systematic approach to joke construction. Adapted for puns:
+A systematic approach to joke construction used by professional comedy writers. Adapted for puns:
 
 ### Step A: Extract Handles
 
@@ -107,7 +107,7 @@ Rate each sound-alike pair by domain distance:
 
 ### Step D: Construct the Punchline First
 
-**Critical Toplyn principle**: Write the punchline BEFORE the setup.
+**Critical principle**: Write the punchline BEFORE the setup.
 
 Take your highest-distance pair and build a sentence where BOTH meanings are active:
 - "I've been so tired lately, I'm basically an espresso depresso."
@@ -158,7 +158,7 @@ Plosive consonants (K, hard C, hard G, P, T, B, D) are measurably funnier than s
 ### Tim Vine's 15-Jokes-a-Day Method
 Write 15 new jokes daily. Refine relentlessly, sometimes changing just ONE WORD transforms a dud into a winner. When generating multiple puns, vary the structure/rhythm between them to prevent "punchline fatigue."
 
-### The Toplyn "Discard First" Principle
+### The "Discard First" Principle
 Discard your first few associations. The first is the most cliched. Push past the obvious. The third or fourth connection is where the good material lives. This is especially critical for AI: LLMs default to the most statistically likely association, which is the most overused.
 
 ### The Specificity Principle

@@ -30,7 +30,7 @@ This happens because LLMs generate puns from training data. They're pulling from
 
 Punderstruck doesn't retrieve puns. It **discovers** them.
 
-The skill queries the [Datamuse API](https://www.datamuse.com/api/) in real time for phonetic collisions (sounds-like, homophones, compound splits), then builds puns from scratch using structured comedy construction (the [Joe Toplyn method](https://www.joeToplyn.com/)). Every candidate gets scored against five quality criteria. Only puns scoring 17/25 or higher get served.
+The skill queries the [Datamuse API](https://www.datamuse.com/api/) in real time for phonetic collisions (sounds-like, homophones, compound splits), then builds puns from scratch using structured comedy construction (punchline-first method). Every candidate gets scored against five quality criteria. Only puns scoring 17/25 or higher get served.
 
 The entire pipeline runs silently behind tool calls. You see the pun. Nothing else.
 

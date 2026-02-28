@@ -244,7 +244,7 @@ Why Your Brain Laughed (or Groaned):
  how brain retroactively resolved both meanings]
 
 Comedy Theory Connection:
-[Which Toplyn principle was applied. Reference specific technique.]
+[Which construction principle was applied. Reference specific technique.]
 
 Upgrade Suggestion:
 [One specific way this joke could be better, tighter setup,

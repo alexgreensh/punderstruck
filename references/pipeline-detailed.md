@@ -11,7 +11,7 @@
 
 ## Step 0: LOAD THEORY
 
-The SKILL.md file contains the core theory inline (mechanism hierarchy, Toplyn method summary, scoring, API URLs). This file provides the detailed execution instructions for each pipeline step.
+The SKILL.md file contains the core theory inline (mechanism hierarchy, construction method summary, scoring, API URLs). This file provides the detailed execution instructions for each pipeline step.
 
 **Selective reads by mode** (loaded per the Reference Loading table in SKILL.md):
 - Standard/Topic/Multiple/Brainstorm/Shower Thoughts: This file only
@@ -119,9 +119,9 @@ For each sound-alike pair, rate domain distance. **Heavily prioritize polysemy**
 
 ## Step 3: GENERATE. (INTERNAL. Output nothing.)
 
-Apply the Toplyn method to the highest-distance pairs from Step 2:
+Apply the punchline-first method to the highest-distance pairs from Step 2:
 
-**3a. Construct punchlines**: Take the highest-distance pairs FROM YOUR COGNITIVE DISTANCE TABLE. Write a sentence where BOTH meanings are simultaneously active. Write the punchline FIRST (Toplyn principle).
+**3a. Construct punchlines**: Take the highest-distance pairs FROM YOUR COGNITIVE DISTANCE TABLE. Write a sentence where BOTH meanings are simultaneously active. Write the punchline FIRST (punchline-first principle).
 
 **3b. Write misdirecting setups**: Each setup must:
 - Establish the FIRST meaning (the expected one)
@@ -329,7 +329,7 @@ For `/punderstruck coffee`:
 2. **HANDLES**: Tier 1: brew, bean, grind, espresso, filter, roast. Tier 2: cupping, extraction, tamp, crema.
 3. **SUBAGENT**: Task(Bash, haiku). Python fires icanhazdadjoke("coffee") + 20 Datamuse queries in parallel. Returns clean text ~5-10 sec.
 4. **ANALYZE**: Study seed mechanisms. Build cognitive distance table. Discover: grounds/grounds (polysemy, HIGH), brew/blew (homophone, HIGH), roast (polysemy, HIGH).
-5. **GENERATE**: Third-association filter → Toplyn punchline-first → "I just bought a coffee plantation. The grounds alone were worth it."
+5. **GENERATE**: Third-association filter → punchline-first construction → "I just bought a coffee plantation. The grounds alone were worth it."
 6. **TIGHTEN + CRITIQUE**: 23/25. Passes humor review. Already tight (14 words).
 7. **SERVE**: Lead with winner, 2-3 runners-up, sign-off, go-deeper invitation.
 
