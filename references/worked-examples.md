@@ -1,116 +1,45 @@
 # Worked Examples: Full Pipeline Walkthroughs
 
-> Created by Alex Greenshpun (10x Company / Co-Intelligent.ai)
+> Created by Alex Greenshpun (linkedin.com/in/alexgreensh)
 > License: PolyForm Noncommercial 1.0.0. See LICENSE file in skill root.
 
-**Purpose**: These walkthroughs show the INTERNAL pipeline process for calibration. Steps 1-4 happen silently via tool calls. Only Step 5 produces visible output.
+**Purpose**: These walkthroughs show the INTERNAL pipeline process (CARLIN CoT) for calibration. Steps 1-6 happen silently. Only Step 7 produces visible output.
 
 **When loaded at runtime (fallback)**: Use the "CORRECT OUTPUT" sections as your delivery template. NEVER reproduce internal analysis in your response.
 
 ---
 
-## Example 1: `/punderstruck coffee`
+## Example 1: `/punderstruck coffee` (Standard Pun)
 
-### Steps 1-4: INTERNAL PIPELINE (never shown to user)
+### Steps 1-6: INTERNAL PIPELINE (never shown to user)
 
-**Step 1: SEED**
-API calls (parallel):
-- icanhazdadjoke search "coffee" -> "I like my coffee like I like my women. I don't like coffee."
-- JokeAPI Pun contains=coffee -> "What's the best Beatles song? Latte Be."
-- Official Joke API random -> "Why do Java developers wear glasses? Because they can't C#." (off-topic but useful structurally)
+**Step 1: Topic Deconstruction (CARLIN)**
+- Topic: Coffee
+- Tier 1 Handles: brew, bean, grind, espresso, filter, roast
+- Tier 2 Handles: cupping, extraction, tamp, crema
+- Third-Association Rule: Discard "tired" and "caffeine". Look for "mugging", "grounds", "depresso".
 
-Mechanisms extracted:
-- Joke 1: Subverted expectation (setup implies comparison, punchline negates)
-- Joke 2: Homophone pun (Let It Be -> Latte Be)
-- Joke 3: Polysemy + tech jargon (C# = programming language + "see sharp")
+**Step 2: The Connector Search**
+- Datamuse yields: `mug` (polysemy: cup / crime), `brew` -> `blew` (homophone).
+- Winner: `mug` (High cognitive distance: coffee -> crime).
 
-**Step 2: ANALYZE**
-Seed joke #2 (Latte Be) is the strongest pun mechanism:
-- **Type**: Phonetic near-miss (Let It -> Latte)
-- **Structure**: Question/answer
-- **Misdirection**: "Best Beatles song" primes music domain, "Latte" crosses to coffee domain
-- **Hinge phrase**: "Latte Be" carries both meanings
+**Step 3: Map the Two Stories (Greg Dean)**
+- 1st Story (Target Assumption): A coffee cup in a coffee shop.
+- 2nd Story (Reinterpretation): A coffee cup reporting a violent crime to the police.
 
-**Step 3: GENERATE**
-Handles extracted from "coffee": brew, bean, grind, espresso, filter, roast, drip, mug, cream, steam
+**Step 4: Drafting (Chris Head's Beforethought)**
+- Punchline First: "It wanted to report a mugging."
+- Setup Backward: "A coffee cup walked into a police station."
+- Check: Did I use the word "mug" in the setup? No. (Golden Rule preserved).
 
-Datamuse sounds-like results (parallel queries):
-- bean -> been, bin, keen, lean, mean, wean
-- brew -> blew, blue, clue, drew, flew, glue, grew, knew, new, threw, true
-- grind -> grinned, blind, bind, find, kind, mind, wind
-- espresso -> depresso (near-miss, discoverable via sl=espresso)
-- filter -> philter, falter, shelter, swelter
-- roast -> toast, boast, coast, ghost, host, most, post
-- mug -> bug, drug, dug, hug, lug, plug, rug, shrug, slug, snug, tug
+**Step 5: Refinement & Tightening**
+- Current draft: "A coffee cup walked into a police station. It wanted to report a mugging."
+- Length: 14 words. Punchline word "mugging" is at the absolute end.
 
-Cognitive distance table (top pairs):
-| Handle | Sound-alike | Domain Cross | Distance |
-|--------|-------------|-------------|----------|
-| espresso | depresso | coffee -> mental health | HIGH |
-| brew | blew | coffee -> destruction/wind | HIGH |
-| bean | been | coffee -> grammar/existence | MEDIUM |
-| grind | grinned | coffee -> emotion | HIGH |
-| mug | mug | coffee -> crime/face | MEDIUM (polysemy) |
-| filter | philter | coffee -> medieval romance | VERY HIGH |
-| roast | ghost | coffee -> supernatural | HIGH |
+**Step 6: Critique**
+- Score: 24/25. Passes the Bar Test.
 
-Winner: mug (polysemy, highest instant recognition + both meanings independently valid)
-
-**Step 4: CRITIQUE**
-5 candidates scored on 5 criteria (1-5 each, /25). Minimum: 17/25 AND "Actually Funny" >= 3/5.
-
-**Candidate 1** (espresso/depresso):
-"What do you call a sad cup of coffee? A depresso."
-- Effortless Activation: 5/5 (espresso -> depresso instant)
-- Surprising Punchline: 3/5 (familiar format, still lands)
-- Groan-Worthy: 4/5 (solid groan)
-- Setup Brevity: 5/5 (one-line Q&A)
-- Actually Funny: 4/5 (someone would tell this at brunch)
-- **Total: 21/25** ✓
-
-**Candidate 2** (brew/blew):
-"I tried to make coffee in the hurricane. The whole batch brew blew away."
-- Effortless Activation: 4/5 (brew/blew works)
-- Surprising Punchline: 3/5 (setup telegraphs it)
-- Groan-Worthy: 3/5 (moderate)
-- Setup Brevity: 3/5 (could be tighter)
-- Actually Funny: 2/5 (minimal reaction) **VETO: auto-eliminate**
-- **Total: 15/25** ✗
-
-**Candidate 3** (grind/grinned):
-"My coffee maker told me a joke this morning. It just sat there and grinned."
-- Effortless Activation: 3/5 (grind/grinned is a stretch)
-- Surprising Punchline: 4/5 (personification unexpected)
-- Groan-Worthy: 3/5 (moderate)
-- Setup Brevity: 4/5 (clean two-liner)
-- Actually Funny: 3/5 (gets a reaction in the right context)
-- **Total: 17/25** ✓ (barely passes)
-
-**Candidate 4** (mug polysemy):
-"A coffee cup walked into a police station. It wanted to report a mugging."
-- Effortless Activation: 5/5 (mug = cup AND crime)
-- Surprising Punchline: 4/5 (police station misdirects from coffee)
-- Groan-Worthy: 5/5 (maximum groan, physical recoil territory)
-- Setup Brevity: 5/5 (tight setup, every word earns its place)
-- Actually Funny: 5/5 (screenshot-and-send-to-three-friends level)
-- **Total: 24/25** ✓ WINNER
-
-**Candidate 5** (filter/philter):
-"I only date people who use pour-over. I need someone with a good filter."
-- Effortless Activation: 4/5 (coffee filter / personality filter, both active)
-- Surprising Punchline: 4/5 (dating + coffee is unexpected)
-- Groan-Worthy: 3/5 (too clever for some audiences)
-- Setup Brevity: 4/5 (clean one-liner)
-- Actually Funny: 3/5 (gets a reaction, niche audience)
-- **Total: 18/25** ✓
-
-Winner: Candidate 4 (mug/mugging) at 24/25.
-- Polysemy pun (one word, two meanings)
-- High cognitive distance (coffee -> crime)
-- Setup misdirects perfectly (police station primes crime domain)
-- Punchline resolves both (mugging = being robbed + being a mug)
-
-### Step 5: CORRECT OUTPUT (what the user actually sees)
+### Step 7: CORRECT OUTPUT (what the user actually sees)
 
 ```
 A coffee cup walked into a police station. It wanted to report a mugging.
@@ -124,89 +53,74 @@ I regret nothing and neither should you.
 
 ---
 
-## Example 2: `/punderstruck --roast marketing`
+## Example 2: `dad joke about a competition in Africa` (Dad Joke Mode)
 
-### Heat Level Selection (pre-pipeline interaction)
-User picks: **Medium Roast** (pointed puns with a knowing wink)
+### Steps 1-6: INTERNAL PIPELINE (never shown to user)
 
-### Steps 1-4: INTERNAL PIPELINE (never shown to user)
+**Step 1: Topic Deconstruction**
+- Topic: Africa, competition.
 
-**Step 1: SEED**
-- icanhazdadjoke search "marketing" -> sparse results
-- JokeAPI Pun contains=marketing -> "Why did the marketer get fired? They kept trying to sell ice to penguins."
+**Step 2: The Connector Search (Syllable Breakdown Formula)**
+- Target word: "African" (3 syllables).
+- Breakdown: "A" + "Free" + "Can".
 
-**Step 3: GENERATE (adapted for roast, Steps 1-3 run normally per bonus-modes.md)**
-Handles: campaign, funnel, leads, conversion, brand, content, SEO, engagement, metrics, ROI, audience, click
+**Step 3: Map the Two Stories**
+- 1st Story: Winning a canned good in a contest in Africa.
+- 2nd Story: The literal phonetic spelling of the continent.
 
-Datamuse sounds-like (roast-relevant pairs):
-- funnel -> fun-nil (compound split: fun + nil = no fun)
-- leads -> leads (polysemy: sales leads vs. physically leads)
-- brand -> bland (near-miss, devastating at medium roast)
-- content -> content/discontent (polysemy)
-- metrics -> met-tricks (compound split)
-- click -> clique (homophone)
+**Step 4: Drafting**
+- Punchline First: "A-free-can!"
+- Setup Backward: "What do you call 'a' tin of peas ('can') that you won in a competition ('free') in The Congo?"
 
-**Step 4: CRITIQUE**
-Roast candidates scored individually, then ARRANGED into monologue arc per bonus-modes.md structure (opener -> build -> callback -> mic drop).
+**Step 5: Refinement & Tightening**
+- The setup is appropriately contrived and wordy. This increases the groan factor.
 
-**Candidate 1**: "Marketers are experts at driving engagement. Too bad their Tinder profiles can't say the same."
-- Effortless Activation: 4/5, Surprising Punchline: 4/5, Groan-Worthy: 3/5, Setup Brevity: 4/5, Actually Funny: 4/5
-- **Total: 19/25** ✓ (good opener energy)
+**Step 6: Critique**
+- Score: 25/25 for Dad Joke criteria. Maximum eye-roll achieved.
 
-**Candidate 2**: "You talk about 'conversion rates' like you're saving souls. Buddy, you're selling SaaS."
-- Effortless Activation: 4/5, Surprising Punchline: 4/5, Groan-Worthy: 4/5, Setup Brevity: 4/5, Actually Funny: 4/5
-- **Total: 20/25** ✓ (strong build material)
-
-**Candidate 3**: "You put the 'fun' in 'funnel,' the 'con' in 'content,' and the 'pain' in 'campaign.'"
-- Effortless Activation: 5/5, Surprising Punchline: 3/5, Groan-Worthy: 5/5, Setup Brevity: 5/5, Actually Funny: 4/5
-- **Total: 22/25** ✓ (mic drop material, triple compound split)
-
-Arranged: C1 energy in opener -> C2 in build -> callback to impressions -> C3 as mic drop.
-
-### Step 5: CORRECT OUTPUT (what the user actually sees)
+### Step 7: CORRECT OUTPUT (what the user actually sees)
 
 ```
-So you're in marketing. Your whole job is impressions, and honestly? You're not making a great one right now.
+What do you call a tin of peas that you won in a competition in The Congo?
 
-You talk about "conversion rates" like you're saving souls. Buddy, you're selling SaaS. Your funnel has more leaks than your strategy has layers, and the best conversion you've ever pulled off is convincing finance to approve another tool.
+...A-free-can!
 
-You put the "fun" in "funnel," the "con" in "content," and the "pain" in "campaign." And somehow, you're still asking for a bigger budget.
+I'll see myself out.
 ```
-
-*Note: No sign-off for roasts. The mic drop IS the closer.*
 
 ---
 
-## Example 3: `/punderstruck --translate "let's align on Q3 priorities"`
+## Example 3: `/punderstruck --roast software engineers`
 
-### Steps 1-4: INTERNAL PIPELINE (never shown to user)
+### Heat Level Selection (pre-pipeline interaction)
+User picks: **Dark Roast** (Sharp and unapologetic)
 
-**Pipeline modified: Skip Step 1 (SEED)**. The corporate phrase IS the seed material.
+### Steps 1-6: INTERNAL PIPELINE (never shown to user)
 
-**Input phrase**: "Let's align on Q3 priorities"
+**Step 1: Topic Deconstruction (Joe Toplyn's Associations)**
+- Target: Software Engineers.
+- Normal traits: Writing code, debugging, using GitHub, Agile sprints.
+- Unflattering associations: No social skills, god complex, single, terrible posture.
 
-**Handles extracted**: align, Q3, priorities, let's
+**Step 2: The Connector Search**
+- "Commit" (Git commit vs commitment issues).
+- "Sprint" (Agile sprint vs running away from women).
+- "Bugs" (Code errors vs personality flaws).
 
-**Datamuse sounds-like**:
-- align -> a-line (fashion), a lion (animal)
-- priorities -> prior-at-ease (stretch), pirate-ies (near-miss)
-- Q3 -> queue three, cutie, QB
+**Step 3 & 4: Drafting the Monologue Arc**
+- *Opener:* Address them directly. "So you're a software engineer."
+- *Build (Association 1):* "You spend 80 hours a week staring at a screen trying to fix 'bugs,' completely ignoring the fact that your entire personality is a fatal error."
+- *Build (Association 2):* "You love Agile because it's the only time you get to 'sprint' without getting winded."
+- *Mic Drop (Connector: Commit):* "But hey, at least you're good at GitHub. It's the only place you'll ever make a commit."
 
-**Best collision**: align -> a lion (high cognitive distance: business -> safari)
-
-**Constructed translation**:
-"Let's a-lion on Q3 priorities. Because this meeting is a jungle and someone needs to be king."
-
-**Backup**: "Let's align on Q3 pirate-ies, plunder the budget before finance notices."
-
-### Step 5: CORRECT OUTPUT (what the user actually sees)
+### Step 7: CORRECT OUTPUT (what the user actually sees)
 
 ```
-"Let's align on Q3 priorities."
+So you're a software engineer. You spend 80 hours a week staring at a screen trying to fix "bugs," completely ignoring the fact that your entire personality is a fatal error.
 
-...or as I heard it: "Let's a-lion on Q3 priorities." Because this meeting is a jungle and someone needs to be king.
+You love Agile because it's the only time you get to "sprint" without getting winded. You argue about tabs versus spaces, but let's be honest, you don't have the social skills to occupy either.
 
-(Backup in the holster: "Let's align on Q3 pirate-ies, plunder the budget before finance notices.")
-
-My creator would like to formally apologize for nothing.
+But hey, at least you're good at GitHub. It's the only place you'll ever make a commit.
 ```
+
+*Note: No sign-off for roasts. The mic drop IS the closer.*

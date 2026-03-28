@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Give me three puns about marketing and AI",
+    "should_trigger": true
+  },
+  {
+    "query": "Brainstorm puns for a B2B SaaS launch",
+    "should_trigger": true
+  },
+  {
+    "query": "Write a limerick about CRM",
+    "should_trigger": true
+  },
+  {
+    "query": "Dad joke about sales ops",
+    "should_trigger": true
+  },
+  {
+    "query": "Roast consultants with wordplay",
+    "should_trigger": true
+  },
+  {
+    "query": "Translate \"let's circle back next quarter\" into a pun",
+    "should_trigger": true
+  },
+  {
+    "query": "Remix a famous quote into an AI pun",
+    "should_trigger": true
+  },
+  {
+    "query": "Shower thought about demand gen",
+    "should_trigger": true
+  },
+  {
+    "query": "Write a serious GTM memo for an AI startup",
+    "should_trigger": false
+  },
+  {
+    "query": "Summarize this article about comedy theory",
+    "should_trigger": false
+  },
+  {
+    "query": "Give me five startup names for a marketing AI product",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain how the Datamuse API works",
+    "should_trigger": false
+  }
+]

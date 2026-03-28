@@ -65,6 +65,7 @@ Then just type `/punderstruck` in any conversation.
 | `brainstorm puns for...` | Collaborative pun consulting for your projects |
 | `shower thought about [topic]` | Those 2am "wait, actually..." observations |
 | `wordplay on [word]` | Manipulates the word itself, phonetically and structurally |
+| `dad joke about [topic]` | Maximum eye-roll dad jokes via syllable-breakdown setups |
 
 Flags combine freely. Natural language works too. "Write me a limerick about sales" activates compose mode automatically.
 
@@ -161,6 +162,11 @@ git clone https://github.com/alexgreensh/punderstruck.git ~/.claude/skills/punde
 
 Update anytime with `git -C ~/.claude/skills/punderstruck pull`.
 
+**Rebuild the upload zip locally:**
+```sh
+python3 scripts/build_package.py
+```
+
 **Claude Desktop / Cowork:**
 Download `punderstruck.zip` from this repo, then go to **Settings > Capabilities > Add Skill** and upload the zip.
 
@@ -172,6 +178,9 @@ Clone this repo and point your agent's skill configuration at the directory cont
 ```
 punderstruck/
 ├── SKILL.md                    # Main skill prompt
+├── scripts/
+│   ├── datamuse_probe.py       # Deterministic sound-alike and seed fetcher
+│   └── build_package.py        # Clean distributable zip builder
 ├── LICENSE                     # PolyForm Noncommercial 1.0.0
 ├── punderstruck.zip            # Ready-to-upload package (Claude Desktop/Cowork)
 ├── assets/
@@ -187,11 +196,11 @@ punderstruck/
 
 ## Built By
 
-[**Alex Greenshpun**](https://linkedin.com/in/alexgreensh) is an AI Strategist, educator, and a person whose love of puns has been described by colleagues as "a condition." She believes AI should amplify human creativity rather than replace it, and that every product name is a pun waiting to happen. When she's not building AI systems at [10x Company](https://the10xcompany.ai) and [Co-Intelligent.ai](https://co-intelligent.ai), she's teaching agents how to be funnier, because apparently 15 years of B2B marketing wasn't punishment enough.
+[**Alex Greenshpun**](https://linkedin.com/in/alexgreensh) is an AI strategist, educator, and a person whose love of puns has been described by colleagues as "a condition." She believes AI should amplify human creativity rather than replace it, and that every product name is a pun waiting to happen.
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](LICENSE). In plain English: **free for personal use, hobby projects, education, and nonprofits.** If you want to use it commercially, [reach out](mailto:alex@co-intelligent.ai) and we'll figure it out.
+[PolyForm Noncommercial 1.0.0](LICENSE). In plain English: **free for personal use, hobby projects, education, and nonprofits.** Commercial licensing inquiries: [linkedin.com/in/alexgreensh](https://linkedin.com/in/alexgreensh).
 
 ---
 
